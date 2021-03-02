@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <title>FoCO Water Analysis</title>
+    
+    <script src="https://unpkg.com/simple-statistics@5.0.0/dist/simple-statistics.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<!-- CSS link -->
+    <link rel = "stylesheet" type = "text/css" href="static/css/style.css">
+    
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <h1>Fort Collins Water Quality Analysis</h1>
+    <h2>Home</h2>
+    
+    <h3>Welcome to the analysis of Fort Collins, CO water quality. The analysis focuses on the turbidity measurements of the raw water(source water) and <br>
+        the finshed water, the water that runs throughout households. Turbidity is the measurement of the clarity of water, essentially how dirty the <br>
+        water is. Measuring turbidity is important because the finished water is supposed to contain little to none in order to pass the allowed level. <br>
+        Click on an image below to take a closer look at the analysis of the Fort Collins water data. The data source is also included below.</h3>
+
+        <div class="container">
+            <h3 class="text-center">Plots for Deeper Analysis</h3>
+              <div class="row">
+                  <div class="col-md-4">
+                    <div class="thumbnail">
+                    </div>
+                    <div class="caption">
+                        <h3>Scatter Plot</h3>
+                        <p><a href ="templates/scatter.html"><img src="images/Scatter.png" alt="Should have been a scatter plot" class="img-thumbnail"></a>
+                        </p>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="thumbnail">
+                      </div>
+                        <div class="caption">
+                        <h3>Line Chart</h3>
+                        <p><a href ="templates/lines.html"><img src="images/Lines.png" alt="Guess there isn't a line chart" class="img-thumbnail"></a>
+                        </p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="thumbnail">
+                      <div class="caption">
+                          <h3>Packed Bubble Chart</h3>
+                          <p><a href ="templates/packed.html"><img src="images/Bubbles.png" alt="Guess there isn't a line chart" class="img-thumbnail"></p>
+                    </div>
+                  </div>
+              </div>
+
+              <style>
+                .footer {
+                  position: fixed;
+                  left: 10;
+                  bottom: 0;
+                  width: 100%;
+                  color: red;
+                  text-align: left;
+                }
+              </style>
+              <div class = "footer">
+                <p><a target = "_blank" href = "https://opendata.fcgov.com/Environmental-Health/City-of-Fort-Collins-Water-Quality/8n27-taq6">Water Data Source</a></p>
+              </div>
+</body>
+</html>
