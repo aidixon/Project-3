@@ -1,6 +1,6 @@
 # Project-3
 
-This project utilzes Scikit-Learn paired with MatPlotLib and Pandas to try and determine which, if any, factors are key contributors in the annual quality of the Fort Collins water. By using Scikit-Learn, the data was able to be fitted into models and those models were then used to predict the data. As well as to determine if the predicted data is decent by using Mean Squared Errors (mse) and r^2. The measured values that were used were: pH, turbidity (NTU), and temperature (C). Sourced data is available here: <html src = "https://opendata.fcgov.com/Environmental-Health/City-of-Fort-Collins-Water-Quality/8n27-taq6"> as a downloadble csv file.
+This project utilzes Scikit-Learn paired with MatPlotLib and Pandas to try and determine which, if any, factors are key contributors in the annual quality of the Fort Collins water. By using Scikit-Learn, the data was able to be fitted into models and those models were then used to predict the data. As well as to determine if the predicted data is decent by using Mean Squared Errors (mse) and r^2. The measured values that were used were: pH, turbidity (NTU), and temperature (C). Sourced data is available here: <a href = "https://opendata.fcgov.com/Environmental-Health/City-of-Fort-Collins-Water-Quality/8n27-taq6">Water Data Source</a>.
 
 # Initial Plot
 
