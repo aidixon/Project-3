@@ -10,12 +10,22 @@ The csv file was read using pd.read_csv and turned into a cleaned dataframe. The
 
 # Using Scikit-Learn
 
-Using mse and r^2 helped determine how well the models predicted the data. The closer the values for the mse and r^2 are to 0, the better the model prediction is. Based on the two values calculated, the chart below is the one that has both the mse and r^2 values closer than the other two measurements that were analyzed. This is because the value of the mse is closer to 0 than any of the other charts/comparisons. Which means the difference between the error of the actual value and the estimated value was the lowest calculated value. The runner up chart contains the next two lowest values, which is in the same measured value as the first chart. Both charts are shown below. For reference, the first chart had a mse value of 4.9891 and a r^2 value of 0.6895 while the second chart had a mse value of 13.2818 and r^2 value of 0.1734. While having a lower r^2 is great, the margin of error is slightly higher. Hence why the first chart is deemed the better predicted model.
+Using mse and r^2 helped determine how well the models predicted the data with linear regression. The mse is the margin of error and the r^2 is the accuracy of the data, so the closer the values for the mse and r^2 are to 0, the better the model prediction is. Based on the two values calculated, the chart below is the one that has both the mse and r^2 values closer than the other two measurements that were analyzed. This is because the value of the mse is the one at or closer to 0 the most than the others. Which means the difference between the error of the actual value and the estimated value was the lowest calculated value. For reference, the turbidity charts had a mse of 0, and that makes the charts match the data because the test data could essentially be part of the data if someone saw the chart at first glance. The next chart with a comparable mse is the pH chart and this is because the data for pH has a range between 6.5 and 8.0; that doesn't give a big range of variety in data.
 
-<img src = "images/PF_temp_residual.png">
+<img src = "images/PF_turb_residual.png">
    
+<img src = "images/HF_pH_residual.png">
+
 <img src = "images/HF_temp_residual.png">
+
+# Mean Square Error and R^2
+
+Along with the charts, the data best shows the accuracy of the training data compared to the test data. The turbidity charts both have a mse of 0, which means that the chart is a perfect model of the data, and the accuracy of the data is at the most -0.15. The turbidity charts could be used to predict what the next values would be since the mse is 0. The mse of the pH is the next value closest to 0, at the most 0.0059 so the chart is a very near perfect model. If the data had a slightly smaller range, then it could very well be a perfect model as well. The accuracy is at the most -0.03, which is even better than the turbidity where the data is pretty much part of the original set. As for the temperature, the mse may have an error of at the most 5%, but the accuracy is higher than the other two with the most at 80%. That means the data could be used to predict the temperature with a 5% error.
+
+<img src = "images/mse.png">
+<img src = "images/r2.png">
+
 
 # Conclusion
 
-Initially, it was believed that turbidity was the sole key factor in regards to having good water quality since the turbidity is the measurement of the water's clarity. But, based on the prediction of the data, the temperature plays a big role as well and has trended to be consistent. That makes sense because when the weather is cold, the water is stagnant, which means there is less debris to go into the water and affect the turbidity. When the weather increases, the icy waters melt, causing runoff and in turn bringing debris. Plus, it is nice to have cold water running out of the faucet.
+Initially, it was believed that turbidity was the sole key factor in regards to having good water quality since the turbidity is the measurement of the water's clarity. But, based on the prediction of the data, the pH plays a big role as well and has trended to be consistent as there isn't much room for the data to vary. Also, if the pH is too basic (7<) or too acidic (>7) then the pipes could be affected and in turn would cause a big difference in the water's turbidity. The temperature also affects the water too. That makes sense because when the weather is cold, the water is stagnant, which means there is less debris to go into the water and affect the turbidity. When the weather increases, the icy waters melt, causing runoff and in turn bringing debris. Plus, it is nice to have cold water running out of the faucet.
