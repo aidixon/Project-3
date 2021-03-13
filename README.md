@@ -12,12 +12,12 @@ The csv file was read using pd.read_csv and turned into a cleaned dataframe. The
 
 Using mse and r^2 helped determine how well the models predicted the data. The closer the values for the mse and r^2 are to 0, the better the model prediction is. Based on the two values calculated, the chart below is the one that has both the mse and r^2 values closer than the other two measurements that were analyzed. This is because the value of the mse is closer to 0 than any of the other charts/comparisons. Which means the difference between the error of the actual value and the estimated value was the lowest calculated value. The runner up chart contains the next two lowest values, which is in the same measured value as the first chart. Both charts are shown below. For reference, the first chart had a mse value of 4.9891 and a r^2 value of 0.6895 while the second chart had a mse value of 13.2818 and r^2 value of 0.1734. While having a lower r^2 is great, the margin of error is slightly higher. Hence why the first chart is deemed the better predicted model.
 
-<img src = "images/PF_temp_residual">
+<img src = "images/PF_temp_residual.png">
    
-<img src = "images/HF_temp_residual">
-<img src = "images/temp_mse">
-<img src = "images/temp_r2">
+<img src = "images/HF_temp_residual.png">
+<img src = "images/temp_mse.png">
+<img src = "images/temp_r2.png">
 
-#Conclusion
+# Conclusion
 
 Initially, it was believed that turbidity was the sole key factor in regards to having good water quality since the turbidity is the measurement of the water's clarity. But, based on the prediction of the data, the temperature plays a big role as well and has trended to be consistent. That makes sense because when the weather is cold, the water is stagnant, which means there is less debris to go into the water and affect the turbidity. When the weather increases, the icy waters melt, causing runoff and in turn bringing debris. Plus, it is nice to have cold water running out of the faucet.
